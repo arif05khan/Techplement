@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="quotes.css">
+    <title>Quotes App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Quote of the Day</h1>
+        <p>Press the button below to receive a random quote!</p>
+
+        <button onclick="fetchRandomQuote();">New Quote</button>
+
+        <p id="quoteOutput"></p>
+        <p id="authorOutput"></p>
+
+        <h2>Search Quotes by Author</h2>
+        <input type="text" id="authorSearch" placeholder="Enter author name">
+        <button onclick="searchByAuthor();">Search</button>
+
+        <div id="searchResults"></div>
+    </div>
+    <script src="quotes.js"></script>
+</body>
+</html>
